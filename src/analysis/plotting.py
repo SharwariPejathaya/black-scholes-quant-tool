@@ -9,13 +9,15 @@ def plot_call_price_heatmap(df):
         values="call_price"
     )
 
-    plt.figure(figsize=(10, 6))
-    sns.heatmap(pivot, cmap="viridis")
-    plt.title("Call Price Sensitivity Heatmap")
-    plt.xlabel("Stock Price Shock")
-    plt.ylabel("Volatility Shock")
-    plt.tight_layout()
-    plt.show()
+    fig, ax = plt.subplots(figsize=(10, 6))
+    sns.heatmap(pivot, cmap="viridis", ax=ax)
+
+    ax.set_title("Call Price Sensitivity Heatmap")
+    ax.set_xlabel("Stock Price Shock")
+    ax.set_ylabel("Volatility Shock")
+
+    return fig
+
 
 def plot_pnl_heatmap(df):
     pivot = df.pivot(
@@ -24,16 +26,11 @@ def plot_pnl_heatmap(df):
         values="pnl"
     )
 
-    plt.figure(figsize=(10, 6))
-    sns.heatmap(
-        pivot,
-        cmap="RdYlGn",
-        center=0
-    )
-    plt.title("Option P&L Heatmap")
-    plt.xlabel("Stock Price Shock")
-    plt.ylabel("Volatility Shock")
-    plt.tight_layout()
-    plt.show()
-    
-    
+    fig, ax = plt.subplots(figsize=(10, 6))
+    sns.heatmap(pivot, cmap="RdYlGn", center=0, ax=ax)
+
+    ax.set_title("Option P&L Heatmap")
+    ax.set_xlabel("Stock Price Shock")
+    ax.set_ylabel("Volatility Shock")
+
+    return fig
