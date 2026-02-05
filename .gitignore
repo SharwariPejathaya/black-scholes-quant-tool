@@ -1,4 +1,19 @@
+# Python cache
 __pycache__/
+*.pyc
+
+# Environments
+bs_quant/
+venv/
 .env
+
+# Databases
 *.db
+
+# Streamlit
 .streamlit/
+
+# OS / editor noise
+.DS_Store
+.idea/
+.vscode/
