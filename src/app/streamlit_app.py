@@ -30,9 +30,6 @@ from analysis.plotting import plot_call_price_heatmap, plot_pnl_heatmap
 
 
 st.set_page_config(page_title="Black–Scholes Quant Tool", layout="wide")
-
-st.title("📈 Black–Scholes Option Pricing & Risk Tool")
-
 # ---------------- INPUTS ----------------
 st.sidebar.header("Option Parameters")
 
