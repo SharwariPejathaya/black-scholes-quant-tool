@@ -1,6 +1,6 @@
 # Black–Scholes Quantitative Risk Tool
 
-A production-grade quantitative finance application for **option pricing, Greeks, sensitivity analysis, and P&L visualization**, built from first principles and deployed using **Streamlit Cloud**.
+A quantitative finance application for **option pricing, Greeks, sensitivity analysis, and P&L visualization**, built from first principles and deployed using **Streamlit Cloud**.
 
 This project demonstrates **quantitative modeling, numerical analysis, Python engineering, and deployment skills** relevant to quantitative trading and research roles.
 
@@ -43,6 +43,7 @@ Computed analytically using closed-form expressions.
 - Suitable for exploratory analysis and interviews
 
 ---
+
 
 
 
