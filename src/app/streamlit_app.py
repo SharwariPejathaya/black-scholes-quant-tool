@@ -5,8 +5,8 @@ st.set_page_config(
     page_title="Black–Scholes Quant Tool",
     layout="wide"
 )
-st.title("📈 Black–Scholes Option Pricing & Risk Tool")
-st.write("✅ App rendered successfully")
+st.title("Black–Scholes Option Pricing & Risk Tool")
+
 
 import sys
 import os
