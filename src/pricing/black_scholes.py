@@ -25,5 +25,5 @@ def black_scholes_price(S, K, T, sigma, r):
     return call_price, put_price
 
 
+# explicit export (important for cloud execution)
 __all__ = ["black_scholes_price"]
-
